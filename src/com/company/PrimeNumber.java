@@ -16,7 +16,7 @@ public class PrimeNumber {
         input = sc.nextInt();
 
         for (count =1; count<=input; count++) {
-            if (isPrime(count)) {
+            if (Prime(count)) {
                 System.out.println(count + " is a prime number");
             }
             else System.out.println(count + " is not a prime number");
@@ -24,12 +24,12 @@ public class PrimeNumber {
         }
     }
 
-    public static boolean isPrime(int n) {
-        if (n <= 1) {
+    public static boolean Prime(int count2) {
+        if (count2 <= 1) {
             return false;
         }
-        for (int i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i == 0) {
+        for (int i = 2; i <= Math.sqrt(count2); i++) {
+            if (count2 % i == 0) {
                 return false;
             }
         }
